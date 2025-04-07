@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Launch Game</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .button {
+      padding: 12px 24px;
+      background-color: #ff007a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(255, 0, 122, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff3399;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Launch Flappy Trump</h1>
+  <p>This game uses advanced features that require a full browser window.</p>
+  <button class="button" onclick="launchGame()">Play Now</button>
+
+  <script>
+    function launchGame() {
+      window.open("https://flappy-trump-beta.vercel.app", "_blank");
+    }
+  </script>
+</body>
+</html>
